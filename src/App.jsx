@@ -1,10 +1,11 @@
 import "./App.css";
+import Assignment32 from "./Components/Assignment3.2";
 import HelloWorld from "./Components/HelloWorld";
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld />
+      <Assignment32 />
     </div>
   );
 }
