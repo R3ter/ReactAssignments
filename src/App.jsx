@@ -1,4 +1,5 @@
 import "./App.css";
+import CheckBox from "./Components/7.2_checkbox/CheckBox";
 import IncrementButton from "./Components/Assignment.6.1_increment/IncrementButton";
 import HideAdnSeek from "./Components/Assignment.6.2_hide_and_seek/HideAdnSeek";
 import ButtonColor from "./Components/Assignment.7.1_child_to_father_colors/ButtonColor";
@@ -13,7 +14,7 @@ import HelloWorld from "./Components/HelloWorld";
 function App() {
   return (
     <div className="App">
-      <Child_to_father_colors></Child_to_father_colors>
+      <CheckBox></CheckBox>
     </div>
   );
 }
