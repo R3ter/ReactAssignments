@@ -4,6 +4,7 @@ import IncrementButton from "./Components/Assignment.6.1_increment/IncrementButt
 import HideAdnSeek from "./Components/Assignment.6.2_hide_and_seek/HideAdnSeek";
 import ButtonColor from "./Components/Assignment.7.1_child_to_father_colors/ButtonColor";
 import Child_to_father_colors from "./Components/Assignment.7.1_child_to_father_colors/child_to_father_colors";
+import NinjaTurtles from "./Components/Assignment.8.2_ninja_turtles/NinjaTurtles";
 import Quiz from "./Components/Assignment.quiz/Quiz";
 import Assignment32 from "./Components/Assignment3.2";
 import Assignment41 from "./Components/Assignment4.1";
@@ -14,7 +15,7 @@ import HelloWorld from "./Components/HelloWorld";
 function App() {
   return (
     <div className="App">
-      <CheckBox></CheckBox>
+      <NinjaTurtles />
     </div>
   );
 }
