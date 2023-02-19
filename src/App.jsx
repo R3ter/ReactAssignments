@@ -1,5 +1,6 @@
 import "./App.css";
 import CheckBox from "./Components/7.2_checkbox/CheckBox";
+import Play_pause_video from "./Components/Assignment.10.1_play_pause_video/play_pause_video";
 import IncrementButton from "./Components/Assignment.6.1_increment/IncrementButton";
 import HideAdnSeek from "./Components/Assignment.6.2_hide_and_seek/HideAdnSeek";
 import ButtonColor from "./Components/Assignment.7.1_child_to_father_colors/ButtonColor";
@@ -15,7 +16,7 @@ import HelloWorld from "./Components/HelloWorld";
 function App() {
   return (
     <div className="App">
-      <NinjaTurtles />
+      <Play_pause_video />
     </div>
   );
 }
