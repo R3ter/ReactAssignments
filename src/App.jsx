@@ -1,6 +1,7 @@
 import "./App.css";
 import Changing_box from "./Components/13.3_changing_box/Changing_box";
 import Focus from "./Components/13.5_focus/Focus";
+import Avatar from "./Components/14.2_avatar/Avatar";
 import CheckBox from "./Components/7.2_checkbox/CheckBox";
 import Play_pause_video from "./Components/Assignment.10.1_play_pause_video/play_pause_video";
 import Image_toggle from "./Components/Assignment.10.2_image_toggle/Image_toggle";
@@ -21,7 +22,7 @@ import HelloWorld from "./Components/HelloWorld";
 function App() {
   return (
     <div className="App">
-      <Focus />
+      <Avatar />
     </div>
   );
 }
