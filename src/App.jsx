@@ -19,7 +19,7 @@ import HelloWorld from "./Components/HelloWorld";
 function App() {
   return (
     <div className="App">
-      <Favorite_color />
+      <Box_animation />
     </div>
   );
 }

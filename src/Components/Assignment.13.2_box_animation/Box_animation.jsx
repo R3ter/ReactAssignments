@@ -1,39 +1,50 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
-export default () => {
+const Child = ({ width, height }) => {
   const div = useRef(null);
+  const [display, setDisplay] = useState(true);
   useEffect(() => {
-    let timer1 = setTimeout(
-      () => {
-        div.current.style.left =
-          10 +
-          +div.current.style.left.substring(
-            0,
-            div.current.style.left.length - 2
-          ) +
-          "px";
-      },
-      1000,
-      4
-    );
-
+    const t1 = setTimeout(() => {
+      div.current.style.left = "50vw";
+    }, 1000);
+    const t2 = setTimeout(() => {
+      setDisplay(false);
+    }, 3000);
     return () => {
-      clearTimeout(timer1);
+      clearTimeout(t1);
+      clearTimeout(t2);
     };
   }, []);
   return (
-    <div>
-      <div
-        ref={div}
-        style={{
-          width: 200,
-          height: 200,
-          backgroundColor: "red",
-          position: "absolute",
-          left: 0,
-        }}
-      ></div>
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "200px",
+      }}
+    >
+      {display && (
+        <div
+          ref={div}
+          style={{
+            width,
+            height,
+            position: "absolute",
+            left: 0,
+            backgroundColor: "red",
+            transitionDuration: "1s",
+          }}
+        ></div>
+      )}
     </div>
   );
 };
-
+export default () => {
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <Child width={"100px"} height={"100px"} />
+      <Child width={"100px"} height={"100px"} />
+      <Child width={"100px"} height={"100px"} />
+    </div>
+  );
+};
